@@ -8,10 +8,6 @@
   <packaging>pom</packaging>
   <name>projectZero</name>
   <description>projectZero</description>
-  <modules>
-    <module>projectZeroConfigs</module>
-    <module>projectZeroCompositeExporter</module>
-  </modules>
   <scm>
     <connection>scm:git:https://github.com/username/repository.git</connection>
     <developerConnection>scm:git:https://github.com/username/repository.git</developerConnection>
