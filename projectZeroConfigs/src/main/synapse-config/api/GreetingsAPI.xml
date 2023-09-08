@@ -9,7 +9,7 @@
             <log description="LOG FULL" level="full"/>
             <payloadFactory description="SET PAYLOAD" media-type="json">
                 <format>{
-  "message": $1
+    "message":$1
 }</format>
                 <args>
                     <arg evaluator="xml" expression="$ctx:greetingsMessage"/>
