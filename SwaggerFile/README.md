@@ -2,5 +2,6 @@
 
 Open in the browser: http://localhost:8290/PetsAPI?swagger.json
 
+Open in the browser: http://localhost:8290/PetsAPI?swagger.yaml
 
 
