@@ -6,8 +6,21 @@ info:
 servers:
 - url: http://localhost:8290/api
 paths:
-  /:
+  /pets:
     get:
+      responses:
+        default:
+          description: Default response
+  /pets/{name}:
+    get:
+      parameters:
+      - name: name
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
       responses:
         default:
           description: Default response
