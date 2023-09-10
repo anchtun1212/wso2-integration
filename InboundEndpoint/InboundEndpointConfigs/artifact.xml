@@ -8,4 +8,22 @@
     <artifact name="DictionaryAPI_metadata" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
         <file>src/main/resources/metadata/DictionaryAPI_metadata.yaml</file>
     </artifact>
+    <artifact name="ExposeRestApiIEP" groupId="com.anchtun.wso2.inbound-endpoint" version="1.0.0" type="synapse/inbound-endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/inbound-endpoints/ExposeRestApiIEP.xml</file>
+    </artifact>
+    <artifact name="Sequence" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Sequence.xml</file>
+    </artifact>
+    <artifact name="HttpTestIEP" groupId="com.anchtun.wso2.inbound-endpoint" version="1.0.0" type="synapse/inbound-endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/inbound-endpoints/HttpTestIEP.xml</file>
+    </artifact>
+    <artifact name="DictionaryApiEP" groupId="com.anchtun.wso2.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/DictionaryApiEP.xml</file>
+    </artifact>
+    <artifact name="SequenceIN" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SequenceIN.xml</file>
+    </artifact>
+    <artifact name="SequenceOUT" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SequenceOUT.xml</file>
+    </artifact>
 </artifacts>
