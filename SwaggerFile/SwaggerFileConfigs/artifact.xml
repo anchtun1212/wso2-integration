@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="PetsAPI" groupId="com.anchtun.wso2.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PetsAPI.xml</file>
+    </artifact>
+    <artifact name="PetsAPI_swagger" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PetsAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="PetsAPI_metadata" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PetsAPI_metadata.yaml</file>
+    </artifact>
+</artifacts>
