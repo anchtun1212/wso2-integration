@@ -3,13 +3,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.anchtun.wso2</groupId>
-  <artifactId>ProxyService</artifactId>
+  <artifactId>InboundEndpoint</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>ProxyService</name>
-  <description>ProxyService</description>
+  <name>InboundEndpoint</name>
+  <description>InboundEndpoint</description>
   <modules>
-    <module>InboundEndpoint</module>
+    <module>InboundEndpointConfigs</module>
+    <module>InboundEndpointCompositeExporter</module>
   </modules>
   <scm>
     <connection>scm:git:https://github.com/username/repository.git</connection>
