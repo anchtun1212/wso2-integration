@@ -11,3 +11,5 @@ Example: `curl -v GET "http://localhost:8290/orders/tunisia" -w "\n"` ==> same d
 Run: `curl -v GET "http://localhost:8290/orders/month/{currentMonth}" -w "\n"`
 
 Example: `curl -v GET "http://localhost:8290/orders/month/october" -w "\n"`
+
+Example: `curl -v GET "http://localhost:8290/orders/month/october?minday=2&maxday=17" -w "\n"`
