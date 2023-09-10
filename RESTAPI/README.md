@@ -13,3 +13,7 @@ Run: `curl -v GET "http://localhost:8290/orders/month/{currentMonth}" -w "\n"`
 Example: `curl -v GET "http://localhost:8290/orders/month/october" -w "\n"`
 
 Example: `curl -v GET "http://localhost:8290/orders/month/october?minday=2&maxday=17" -w "\n"`
+
+Example: `curl -v GET "http://localhost:8290/orders/list" -w "\n"`
+
+Example: `curl -v GET "http://localhost:8290/orders/list/Tunisia" -w "\n"`
