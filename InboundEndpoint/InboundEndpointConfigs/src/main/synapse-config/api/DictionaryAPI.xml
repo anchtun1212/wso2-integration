@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api" name="DictionaryAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" protocol="http" uri-template="/dictionary/{word}">
+        <inSequence>
+            <log description="LOG MESSAGE" level="custom">
+                <property expression="$ctx:uri.var.word" name="LOG MESSAGE"/>
+            </log>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
