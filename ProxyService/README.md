@@ -9,3 +9,18 @@
 4) Execute: `getQuote` ==> `<xsd:symbol>IBM</xsd:symbol>`
 
 
+# Deployed Proxy Services
+
+1) Run the project
+
+2) Go to: `Deployed Proxy Services` and copy the WSDL and run it on browser:
+
+Example: http://support-ThinkPad-T490:8290/services/CustomProxyServiceStockQuoteService?wsdl
+
+you can change manually by:
+
+Exmaple: http://localhost:8290/services/CustomProxyServiceStockQuoteService?wsdl
+
+You can use this WSDL to create a new SOAP project in SOAPUI
+
+
