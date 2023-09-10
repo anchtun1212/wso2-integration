@@ -2,4 +2,7 @@
     <artifact name="CustomProxyServiceStockQuoteService" groupId="com.anchtun.wso2.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/CustomProxyServiceStockQuoteService.xml</file>
     </artifact>
+    <artifact name="SimpleStockQuote" groupId="com.anchtun.wso2.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/SimpleStockQuote.xml</file>
+    </artifact>
 </artifacts>
