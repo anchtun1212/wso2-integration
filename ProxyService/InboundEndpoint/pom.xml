@@ -10,7 +10,6 @@
   <description>InboundEndpoint</description>
   <modules>
     <module>InboundEndpointConfigs</module>
-    <module>InboundEndpointCompositeExporter</module>
   </modules>
   <scm>
     <connection>scm:git:https://github.com/username/repository.git</connection>
