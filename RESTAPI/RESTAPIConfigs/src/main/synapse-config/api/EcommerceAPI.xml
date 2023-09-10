@@ -9,4 +9,24 @@
         <outSequence/>
         <faultSequence/>
     </resource>
+    <resource methods="GET" protocol="http" uri-template="/month/{currentMonth}">
+        <inSequence>
+            <log description="LOG MESSAGE" level="custom">
+                <property expression="$ctx:uri.var.currentMonth" name="LOG MONTH"/>
+            </log>
+            <payloadFactory description="SET PAYLOAD" media-type="json">
+                <format>{
+  "month":$1
+}</format>
+                <args>
+                    <arg evaluator="xml" expression="$ctx:uri.var.currentMonth"/>
+                </args>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond description="SEND OUT"/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
 </api>
