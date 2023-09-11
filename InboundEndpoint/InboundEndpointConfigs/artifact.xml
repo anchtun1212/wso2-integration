@@ -35,4 +35,7 @@
     <artifact name="JSONDataFileProcessSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/JSONDataFileProcessSeq.xml</file>
     </artifact>
+    <artifact name="ErrorProcessSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ErrorProcessSeq.xml</file>
+    </artifact>
 </artifacts>
