@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <task class="org.apache.synapse.startup.tasks.MessageInjector" group="synapse.simple.quartz" name="InjectRequestWeatherApiTask" xmlns="http://ws.apache.org/ns/synapse">
-    <trigger count="2" interval="10"/>
+    <trigger count="5" interval="10"/>
+    <property name="message" xmlns:task="http://www.wso2.org/products/wso2commons/tasks">
+        <request xmlns="">
+            <location>
+                <country>Tunisia</country>
+                <city>Monastir</city>
+            </location>
+        </request>
+    </property>
     <property name="injectTo" value="Proxy" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
     <property name="proxyName" value="CustomWeatherApiProxy" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
-    <property name="message" value="&lt;request>&#x9;&lt;location>&#x9;&#x9;&lt;country>Tunisia&lt;/country>&#x9;&#x9;&lt;city>Monastir&lt;/city>&#x9;&lt;/location>&lt;/request>" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
 </task>
