@@ -16,11 +16,11 @@
         <parameter name="transport.vfs.FileURI">file:////home/mohammedayman/git/wso2-integration/InboundEndpoint/tmp/JSON/In</parameter>
         <parameter name="transport.vfs.MoveAfterFailure">file:////home/mohammedayman/git/wso2-integration/InboundEndpoint/tmp/JSON/Original</parameter>
         <parameter name="transport.vfs.ReplyFileName">response.xml</parameter>
+        <parameter name="transport.vfs.MoveTimestampFormat">yyy.MMMMM.dd.hh.mm.ss aaa</parameter>
         <parameter name="transport.vfs.DistributedLock">false</parameter>
         <parameter name="transport.vfs.FileNamePattern">.*\.json</parameter>
         <parameter name="transport.vfs.MoveAfterProcess">file:////home/mohammedayman/git/wso2-integration/InboundEndpoint/tmp/JSON/Out</parameter>
         <parameter name="transport.vfs.Locking">disable</parameter>
-        <parameter name="transport.vfs.DistributedTimeout">yyy.MMMMM.dd.hh.mm.ss aaa</parameter>
         <parameter name="transport.vfs.SFTPUserDirIsRoot">false</parameter>
         <parameter name="transport.vfs.FileSortAttribute">none</parameter>
         <parameter name="transport.vfs.FileSortAscending">true</parameter>
