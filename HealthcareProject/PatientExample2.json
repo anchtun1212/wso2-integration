@@ -1,0 +1,13 @@
+{
+	"patient": {
+		"name": "Mohamed Aymen Charrada",
+		"dob": "1940-03-19",
+		"ssn": "234-23-525",
+		"address": "Riyadh",
+		"phone": "8770586755",
+		"email": "mohamed.aymen.charrada@wso2.com"
+	},
+	"doctor": "thomas collins",
+	"hospital": "grand oak community hospital",
+	"appointment_date": "2025-04-02"
+}
