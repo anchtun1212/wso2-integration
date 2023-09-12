@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="test5" groupId="com.anchtun.wso2.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
-        <item>
-            <file>test5.dmc</file>
-            <path>/_system/governance/endpoints</path>
-            <mediaType>application/datamapper</mediaType>
-            <properties/>
-        </item>
-    </artifact>
-    </artifacts>
+<?xml version="1.0" encoding="UTF-8"?>
+<artifacts>
+    
+</artifacts>
