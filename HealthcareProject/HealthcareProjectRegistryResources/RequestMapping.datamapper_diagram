@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_rcGwEKg_Eeu4RaajlifLgA" type="DataMapper" name="RequestMapping.datamapper_diagram" measurementUnit="Pixel">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_rcGwEKg_Eeu4RaajlifLgA" type="DataMapper" name="RequestMapping.datamapper_diagram" measurementUnit="Pixel">
   <children xmi:type="notation:Shape" xmi:id="_r1fgcKg_Eeu4RaajlifLgA" type="2002" fontName="Segoe UI">
     <children xmi:type="notation:Shape" xmi:id="_xx0U8Kg_Eeu4RaajlifLgA" type="3002" fontName="Segoe UI">
       <children xmi:type="notation:DecorationNode" xmi:id="_xx08AKg_Eeu4RaajlifLgA" type="5002"/>
@@ -288,13 +288,6 @@
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_rcGwEag_Eeu4RaajlifLgA"/>
   <element xmi:type="datamapper:DataMapperRoot" href="RequestMapping.datamapper#/"/>
-  <edges xmi:type="notation:Connector" xmi:id="_1moqYKg_Eeu4RaajlifLgA" type="4001" source="_xyV5YKg_Eeu4RaajlifLgA" target="_ztTxQKg_Eeu4RaajlifLgA">
-    <styles xmi:type="notation:FontStyle" xmi:id="_1moqYag_Eeu4RaajlifLgA" fontName="Segoe UI"/>
-    <element xmi:type="datamapper:DataMapperLink" href="RequestMapping.datamapper#//@input/@treeNode.0/@node.0/@outNode/@outgoingLink.0"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1moqYqg_Eeu4RaajlifLgA" points="[-2, 0, -252, -20]$[248, 20, -2, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1m8zcKg_Eeu4RaajlifLgA" id="CENTER"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1m8zcag_Eeu4RaajlifLgA" id="CENTER"/>
-  </edges>
   <edges xmi:type="notation:Connector" xmi:id="_1_FmoKg_Eeu4RaajlifLgA" type="4001" source="_xym_IKg_Eeu4RaajlifLgA" target="_ztZQ0Kg_Eeu4RaajlifLgA">
     <styles xmi:type="notation:FontStyle" xmi:id="_1_Fmoag_Eeu4RaajlifLgA" fontName="Segoe UI"/>
     <element xmi:type="datamapper:DataMapperLink" href="RequestMapping.datamapper#//@input/@treeNode.0/@node.1/@outNode/@outgoingLink.0"/>
@@ -350,5 +343,12 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_51pBcqg_Eeu4RaajlifLgA" points="[-2, 0, -252, 0]$[248, 0, -2, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_51qPkKg_Eeu4RaajlifLgA" id="CENTER"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_51qPkag_Eeu4RaajlifLgA" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_IkPRIFGZEe6UKt4UznLYRw" type="4001" source="_xyV5YKg_Eeu4RaajlifLgA" target="_ztTxQKg_Eeu4RaajlifLgA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_IkPRIVGZEe6UKt4UznLYRw" fontName="Ubuntu"/>
+    <element xmi:type="datamapper:DataMapperLink" href="RequestMapping.datamapper#//@input/@treeNode.0/@node.0/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IkPRIlGZEe6UKt4UznLYRw" points="[-2, 0, -252, -17]$[248, 17, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IkRtYFGZEe6UKt4UznLYRw" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IkRtYVGZEe6UKt4UznLYRw" id="CENTER"/>
   </edges>
 </notation:Diagram>
