@@ -7,3 +7,6 @@
 3) Run: `curl -v GET "URL_TO_RUN in Deployed APIs/mohamed" -w "\n"`
 
 4) Example: `curl -v GET "http://localhost:8290/healthcare/querydoctor/surgery" -w "\n"`
+
+5) Run: `curl -v POST --data @PatientExample.json "http://localhost:8290/healthcare/categories/ent/reserve" --header "Content-Type: application/json" -w "\n"`
+
