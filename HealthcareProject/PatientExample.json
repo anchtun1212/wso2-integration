@@ -1,11 +1,11 @@
 {
 	"patient": {
-		"name": "Nelson Dias",
+		"name": "Mohamed Aymen Charrada",
 		"dob": "1940-03-19",
 		"ssn": "234-23-525",
-		"address": "Lisbon",
-		"phone": "8770586755",
-		"email": "nelson.dias@wso2.com"
+		"address": "Riyadh",
+		"phone": "0500000000",
+		"email": "mohamed.aymen.charrada@wso2.com"
 	},
 	"doctor": "thomas collins",
 	"hospital": "grand oak community hospital",
