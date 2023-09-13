@@ -12,3 +12,4 @@
 
 6) To test the Data Mapper Run this: `curl -v POST --data @PatientClient.json "http://localhost:8290/healthcare/categories/ent/reserve" --header "Content-Type: application/json" -w "\n"`
 
+7) To check Sequence Template Run: `curl -v POST --data @PatientExample.json "http://localhost:8290/healthcare/categories/ent/reserve" --header "Content-Type: application/json" -w "\n"`
