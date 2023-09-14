@@ -35,4 +35,13 @@
     <artifact name="Station3EP" groupId="com.anchtun.wso2.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/Station3EP.xml</file>
     </artifact>
+    <artifact name="StationAPI" groupId="com.anchtun.wso2.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/StationAPI.xml</file>
+    </artifact>
+    <artifact name="StationAPI_swagger" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/StationAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="StationAPI_metadata" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/StationAPI_metadata.yaml</file>
+    </artifact>
 </artifacts>
