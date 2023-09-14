@@ -1,1 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts/>
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="GenderAPI" groupId="com.anchtun.wso2.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/GenderAPI.xml</file>
+    </artifact>
+    <artifact name="GenderAPI_swagger" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/GenderAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="GenderAPI_metadata" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/GenderAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="processingMaleSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/processingMaleSeq.xml</file>
+    </artifact>
+</artifacts>
