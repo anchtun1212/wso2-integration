@@ -21,3 +21,7 @@
 2) Run: `sudo docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-management`
 
 3) Open: http://localhost:15672/ --> default user/password: guest/guest
+
+4) Run: `curl -v POST --data @PatientExample.json "http://localhost:8290/healthcare/categories/surgery/reserve" --header "Content-Type: application/json" -w "\n"`
+
+

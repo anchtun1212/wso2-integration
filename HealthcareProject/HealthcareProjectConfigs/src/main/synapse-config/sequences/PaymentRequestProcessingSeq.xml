@@ -8,6 +8,7 @@
     </call>
     <log description="LOG END" level="custom">
         <property name="LOG MESSAGE" value="LOG AFTER SETTLE PAYMENT EP CALL"/>
+        <property expression="json-eval($)" name="LOG APPOINTMENT"/>
     </log>
     <drop/>
 </sequence>
