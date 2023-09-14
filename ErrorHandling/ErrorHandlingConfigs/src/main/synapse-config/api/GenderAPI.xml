@@ -10,11 +10,15 @@
                     <log description="LOG MALE" level="custom">
                         <property name="LOG MALE" value="MALE"/>
                     </log>
+                    <sequence key=""/>
                 </then>
                 <else>
                     <log description="LOG FEMALE" level="custom">
                         <property name="LOG FEMALE" value="FEMALE"/>
                     </log>
+                    <send>
+                        <endpoint key="unexistentFemaleEP"/>
+                    </send>
                 </else>
             </filter>
         </inSequence>

@@ -11,4 +11,7 @@
     <artifact name="processingMaleSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/processingMaleSeq.xml</file>
     </artifact>
+    <artifact name="logErrorHandlerSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/logErrorHandlerSeq.xml</file>
+    </artifact>
 </artifacts>
