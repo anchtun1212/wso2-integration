@@ -14,4 +14,10 @@
     <artifact name="logErrorHandlerSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/logErrorHandlerSeq.xml</file>
     </artifact>
+    <artifact name="faultSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/faultSeq.xml</file>
+    </artifact>
+    <artifact name="customErrorHandlerSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/customErrorHandlerSeq.xml</file>
+    </artifact>
 </artifacts>
