@@ -13,3 +13,11 @@
 6) To test the Data Mapper Run this: `curl -v POST --data @PatientClient.json "http://localhost:8290/healthcare/categories/ent/reserve" --header "Content-Type: application/json" -w "\n"`
 
 7) To check Sequence Template Run: `curl -v POST --data @PatientExample.json "http://localhost:8290/healthcare/categories/ent/reserve" --header "Content-Type: application/json" -w "\n"`
+
+# RabbitMQ
+
+1) Go to: https://rabbitmq.com/download.html
+
+2) Run: `sudo docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-management`
+
+3) Open: http://localhost:15672/ --> default user/password: guest/guest
