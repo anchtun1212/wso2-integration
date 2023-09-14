@@ -6,4 +6,8 @@
     <call>
         <endpoint key="SettlePaymentEP"/>
     </call>
+    <log description="LOG END" level="custom">
+        <property name="LOG MESSAGE" value="LOG AFTER SETTLE PAYMENT EP CALL"/>
+    </log>
+    <drop/>
 </sequence>

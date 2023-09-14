@@ -35,4 +35,7 @@
     <artifact name="PaymentRequestProcessingSeq" groupId="com.anchtun.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/PaymentRequestProcessingSeq.xml</file>
     </artifact>
+    <artifact name="PaymentRequestMP" groupId="com.anchtun.wso2.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/PaymentRequestMP.xml</file>
+    </artifact>
 </artifacts>
