@@ -18,6 +18,7 @@
     <com.anchtun.wso2.resource_._RequestMapping_inputSchema>capp/EnterpriseServiceBus</com.anchtun.wso2.resource_._RequestMapping_inputSchema>
     <com.anchtun.wso2.endpoint_._GrandOakEP>capp/EnterpriseServiceBus</com.anchtun.wso2.endpoint_._GrandOakEP>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
+    <com.anchtun.wso2.endpoint_._SettlePaymentEP>capp/EnterpriseServiceBus</com.anchtun.wso2.endpoint_._SettlePaymentEP>
     <com.anchtun.wso2.metadata_._HealthcareAPI_metadata>capp/EnterpriseServiceBus</com.anchtun.wso2.metadata_._HealthcareAPI_metadata>
     <com.anchtun.wso2.metadata_._HealthcareAPI_swagger>capp/EnterpriseServiceBus</com.anchtun.wso2.metadata_._HealthcareAPI_swagger>
     <com.anchtun.wso2.endpoint_._QueryDoctorEP>capp/EnterpriseServiceBus</com.anchtun.wso2.endpoint_._QueryDoctorEP>
@@ -26,6 +27,7 @@
     <com.anchtun.wso2.endpoint_._PineValleyEP>capp/EnterpriseServiceBus</com.anchtun.wso2.endpoint_._PineValleyEP>
     <com.anchtun.wso2.endpoint_._ClemencyEP>capp/EnterpriseServiceBus</com.anchtun.wso2.endpoint_._ClemencyEP>
     <com.anchtun.wso2.resource_._RequestMapping>capp/EnterpriseServiceBus</com.anchtun.wso2.resource_._RequestMapping>
+    <com.anchtun.wso2.endpoint_._ChannelingEP>capp/EnterpriseServiceBus</com.anchtun.wso2.endpoint_._ChannelingEP>
     <com.anchtun.wso2.resource_._RequestMapping_outputSchema>capp/EnterpriseServiceBus</com.anchtun.wso2.resource_._RequestMapping_outputSchema>
   </properties>
   <dependencies>
@@ -42,14 +44,8 @@
       <type>zip</type>
     </dependency>
     <dependency>
-      <groupId>com.anchtun.wso2.resource</groupId>
-      <artifactId>RequestMapping_xsltStyleSheet</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
       <groupId>com.anchtun.wso2.endpoint</groupId>
-      <artifactId>QueryDoctorEP</artifactId>
+      <artifactId>ChannelingEP</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -58,24 +54,6 @@
       <artifactId>PineValleyEP</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.anchtun.wso2.endpoint</groupId>
-      <artifactId>GrandOakEP</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.anchtun.wso2.template</groupId>
-      <artifactId>HospitalRoutingSQ</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.anchtun.wso2.resource</groupId>
-      <artifactId>RequestMapping_inputSchema</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
     </dependency>
     <dependency>
       <groupId>com.anchtun.wso2.resource</groupId>
@@ -100,6 +78,42 @@
       <artifactId>HealthcareAPI_metadata</artifactId>
       <version>1.0.0</version>
       <type>yaml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.anchtun.wso2.resource</groupId>
+      <artifactId>RequestMapping_xsltStyleSheet</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.anchtun.wso2.endpoint</groupId>
+      <artifactId>SettlePaymentEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.anchtun.wso2.endpoint</groupId>
+      <artifactId>QueryDoctorEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.anchtun.wso2.endpoint</groupId>
+      <artifactId>GrandOakEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.anchtun.wso2.template</groupId>
+      <artifactId>HospitalRoutingSQ</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.anchtun.wso2.resource</groupId>
+      <artifactId>RequestMapping_inputSchema</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
     </dependency>
   </dependencies>
   <repositories>

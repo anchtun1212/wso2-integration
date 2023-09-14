@@ -23,4 +23,10 @@
     <artifact name="HospitalRoutingSQ" groupId="com.anchtun.wso2.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/templates/HospitalRoutingSQ.xml</file>
     </artifact>
+    <artifact name="ChannelingEP" groupId="com.anchtun.wso2.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ChannelingEP.xml</file>
+    </artifact>
+    <artifact name="SettlePaymentEP" groupId="com.anchtun.wso2.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/SettlePaymentEP.xml</file>
+    </artifact>
 </artifacts>
