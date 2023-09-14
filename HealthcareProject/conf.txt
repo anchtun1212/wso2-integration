@@ -1,0 +1,19 @@
+[transport.rabbitmq]
+sender_enable = true
+
+[[transport.rabbitmq.sender]]
+name = "CachedRabbitMQConnectionFactory"
+parameter.hostname = "localhost"
+parameter.port = 5672
+parameter.username = "guest"
+parameter.password = "guest"
+
+#[transport.rabbitmq]
+#listener_enable = true
+
+[[transport.rabbitmq.listener]]
+name = "AMQPConnectionFactory"
+parameter.hostname = "localhost"
+parameter.port = 5672
+parameter.username = "guest"
+parameter.password = "guest"
