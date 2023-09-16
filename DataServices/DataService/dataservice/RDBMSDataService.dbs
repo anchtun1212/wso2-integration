@@ -10,6 +10,12 @@
       <with-param name="EmployeeNumberIP" query-param="EmployeeNumberIP" />
     </call-query>
   </resource>
+  <config id="mariaDB">
+    <property name="driverClassName">com.mysql.cj.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/wso2_course</property>
+    <property name="username">root</property>
+    <property name="password">root</property>
+  </config>
   <query id="GetAllEmployeeDetails" useConfig="mariaDB">
     <sql>select employee_number, first_name, last_name, email, salary from wso2_course.employee</sql>
     <result outputType="json">{
@@ -35,10 +41,22 @@
       <element name="salary" column="salary" xsdType="string" />
     </result>
   </query>
-  <config id="mariaDB">
-    <property name="driverClassName">com.mysql.cj.jdbc.Driver</property>
-    <property name="url">jdbc:mysql://localhost:3306/wso2_course</property>
-    <property name="username">root</property>
-    <property name="password">root</property>
-  </config>
+  <query id="AddEmployee" useConfig="mariaDB" returnGeneratedKeys="true" keyColumns="employee_number">
+    <sql>insert into wso2_course.employee (first_name, last_name, email, salary) 
+values (:firstName, :lastName, :email, :salary)
+ </sql>
+    <param name="firstName" paramType="SCALAR" sqlType="STRING" />
+    <param name=" lastName" paramType="SCALAR" sqlType="STRING" />
+    <param name=" email" paramType="SCALAR" sqlType="STRING" />
+    <param name=" salary" paramType="SCALAR" sqlType="STRING" />
+  </query>
+  <resource method="POST" path="/employee">
+    <description>Add a new employee</description>
+    <call-query href="AddEmployee">
+      <with-param name="firstName" query-param="firstName" />
+      <with-param name=" lastName" query-param=" lastName" />
+      <with-param name=" email" query-param=" email" />
+      <with-param name=" salary" query-param=" salary" />
+    </call-query>
+  </resource>
 </data>
