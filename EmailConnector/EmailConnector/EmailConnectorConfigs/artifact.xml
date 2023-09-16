@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="EmailAPI" groupId="com.anchtun.wso2.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/EmailAPI.xml</file>
+    </artifact>
+    <artifact name="EmailAPI_swagger" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/EmailAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="EmailAPI_metadata" groupId="com.anchtun.wso2.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/EmailAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="smtpconnection" groupId="com.anchtun.wso2.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>/src/main/synapse-config/local-entries/smtpconnection.xml</file>
+    </artifact>
+</artifacts>
