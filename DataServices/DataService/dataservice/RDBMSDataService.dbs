@@ -1,0 +1,44 @@
+<data name="RDBMSDataService" serviceNamespace="" serviceGroup="" transports="http https">
+  <description>mariadb data service example</description>
+  <resource method="GET" path="/employee">
+    <description>Get all employee details</description>
+    <call-query href="GetAllEmployeeDetails" />
+  </resource>
+  <resource method="GET" path="/employee/{EmployeeNumberIP}">
+    <description>Get employee details based on employee number</description>
+    <call-query href="GetEmployeeInfo">
+      <with-param name="EmployeeNumberIP" query-param="EmployeeNumberIP" />
+    </call-query>
+  </resource>
+  <query id="GetAllEmployeeDetails" useConfig="mariaDB">
+    <sql>select employee_number, first_name, last_name, email, salary from wso2_course.employee</sql>
+    <result outputType="json">{
+	"Employees": {
+		"Employee": [{
+			"EmployeeNumber": "$employee_number",
+			"FirstName": "$first_name",
+			"LastName": "$last_name",
+			"Email": "$email",
+			"SalaryCustom": "$salary"
+		}]
+	}
+}</result>
+  </query>
+  <query id="GetEmployeeInfo" useConfig="mariaDB">
+    <sql>select employee_number, first_name, last_name, email, salary from wso2_course.employee where employee_number = :EmployeeNumberIP</sql>
+    <param name="EmployeeNumberIP" paramType="SCALAR" sqlType="STRING" type="IN" optional="false" />
+    <result element="Entries" rowName="Entry">
+      <element name="employee_number" column="employee_number" xsdType="string" />
+      <element name="first_name" column="first_name" xsdType="string" />
+      <element name="last_name" column="last_name" xsdType="string" />
+      <element name="email" column="email" xsdType="string" />
+      <element name="salary" column="salary" xsdType="string" />
+    </result>
+  </query>
+  <config id="mariaDB">
+    <property name="driverClassName">com.mysql.cj.jdbc.Driver</property>
+    <property name="url">jdbc:mysql://localhost:3306/wso2_course</property>
+    <property name="username">root</property>
+    <property name="password">root</property>
+  </config>
+</data>
