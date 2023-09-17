@@ -20,6 +20,6 @@
 8) For more see: https://ei.docs.wso2.com/en/7.0.0/micro-integrator/administer-and-observe/using-the-command-line-interface/
 
 # Test the application using CLI
-
-1) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`
-2) 
+1) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`.
+2) Run: `mi remote login  [username] [password]` e.g. `mi remote login admin admin`.
+3) NOTE: The default remote will be the micro integrator instance running on localhost with the port 9164.
