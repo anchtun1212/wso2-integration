@@ -1,5 +1,6 @@
-# Test project AggregateMediator
+# Getting started with WSO2 Micro Integrator CLI Tool
 
-Click on HTTP Client then call: http://localhost:8290/station
+1) Go to: https://wso2.com/integration/micro-integrator/tooling/ and download Linux version
+2) 
 
 
