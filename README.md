@@ -1,5 +1,4 @@
 # Getting started with WSO2 Micro Integrator CLI Tool
-
 1) Go to: https://wso2.com/integration/micro-integrator/tooling/ and download Linux version.
 2) Navigate to: `<MI_HOME>/bin` e.g.: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/WSO2-Integration-Studio-8.0.0/runtime/microesb/bin`
 3) MI is supported only on JDK 1.8, 9, 10 and 11
@@ -7,8 +6,10 @@
 5) `export PATH=/path/to/mi/cli/directory/bin:$PATH` e.g. `export PATH=/home/mohammedayman/projects/sme/fundingGate/integration/wso2mi-cli-1.2.0/bin:$PATH`
 6) Run: `mi`
 
-# Log in to the CLI
+# Using the Management API
+1) See this: https://ei.docs.wso2.com/en/7.0.0/micro-integrator/administer-and-observe/working-with-management-api/
 
+# Log in to the CLI
 1) `mi remote login`.
 2) The default username is `admin` and the default password is `admin`.
 3) To login: `mi remote login [username] [password]`
@@ -18,8 +19,7 @@
 7) Global Flags: `--verbose    Enable verbose logs (Provides more information on execution), --help, -h Display information and example usage of a command`
 8) For more see: https://ei.docs.wso2.com/en/7.0.0/micro-integrator/administer-and-observe/using-the-command-line-interface/
 
+# Test the application using CLI
 
-# Using the Management API
-
-1) See this: https://ei.docs.wso2.com/en/7.0.0/micro-integrator/administer-and-observe/working-with-management-api/
-
+1) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps`
+2) 
