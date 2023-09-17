@@ -21,9 +21,14 @@
 
 # Test the application using CLI
 1) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./micro-integrator.sh -DenableManagementApi`
-2) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`.
+2) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`. e.g. put: `HealthcareProjectCompositeExporter_1.0.0-SNAPSHOT.car`
 3) Run: `mi remote login  [username] [password]` e.g. `mi remote login admin admin`.
 4) NOTE: The default remote will be the micro integrator instance running on localhost with the port 9164.
 5) To list all the endpoints deployed in the WSO2 Micro Integrator: `mi endpoint show`.
-6) To get information about a specific endpoint: `mi endpoint show GrandOakEndpoint`
-7) To get information about a specific composite app: `mi compositeapp show HealthcareCompositeExporter`
+6) To get information about a specific endpoint: `mi endpoint show QueryDoctorEP`, you will see:
+     Name - QueryDoctorEP
+     Type - HTTP Endpoint
+     Active - true
+     Method - GET
+     URI Template - http://localhost:9090/healthcare/
+8) To get information about a specific composite app: `mi compositeapp show HealthcareCompositeExporter`
