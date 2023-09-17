@@ -11,5 +11,9 @@
 
 1) `mi remote login`.
 2) The default username is `admin` and the default password is `admin`.
+3) To login: `mi remote login [username] [password]`
+4) To logout: `mi remote logout`
+5) Usage: `mi [command]`
+6) Version: `mi version`
 
 
