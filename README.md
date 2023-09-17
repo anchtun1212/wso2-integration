@@ -21,5 +21,5 @@
 
 # Test the application using CLI
 
-1) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps`
+1) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`
 2) 
