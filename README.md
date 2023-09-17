@@ -23,3 +23,6 @@
 1) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`.
 2) Run: `mi remote login  [username] [password]` e.g. `mi remote login admin admin`.
 3) NOTE: The default remote will be the micro integrator instance running on localhost with the port 9164.
+4) To list all the endpoints deployed in the WSO2 Micro Integrator: `mi endpoint show`.
+5) To get information about a specific endpoint: `mi endpoint show GrandOakEndpoint`
+6) To get information about a specific composite app: `mi compositeapp show HealthcareCompositeExporter`
