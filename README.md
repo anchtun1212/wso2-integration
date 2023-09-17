@@ -16,5 +16,7 @@
 5) Usage: `mi [command]`
 6) Version: `mi version`
 7) Global Flags: `--verbose    Enable verbose logs (Provides more information on execution), --help, -h Display information and example usage of a command`
+8) For more see: https://ei.docs.wso2.com/en/7.0.0/micro-integrator/administer-and-observe/using-the-command-line-interface/
+   
 
 
