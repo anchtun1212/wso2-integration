@@ -110,7 +110,25 @@ There are 3 methods:
    - If you have not installed “ant” in your server, install it by running following command. ( Apache Ant is a prerequisite for this method)
      
           sudo apt-get install ant
+
+   - Copy related JDBC driver (which match with the database management system you have used) to the following location.
+
+          <PRODUCT_HOME>/lib/
      
+   - If you are using MySQL database, you can download MySQL database drivers.
+   - Go to the following location.
+
+          cd <PRODUCT_HOME>/bin/
+     
+   - Run the following command to reset the password for your admin account.
+
+          bash chpasswd.sh --db-driver "<DB_DRIVER_CLASS>" --db-url "<DB_URL>" --db-username "<DB_USERNAME>" --db-password "<DB_PASSWORD>" --username "admin" --new-password "                    <NEW_PASSWORD>"
+     
+The following message is displayed if the password is updated successfully.
+
+          Password of user [username] updated successfully
+          
+   - Login to the carbon management console with new admin credentials.
 
 
 
