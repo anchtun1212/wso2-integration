@@ -193,7 +193,12 @@ WSO2 API Controller (apictl) is a command-line tool providing the capability to 
 1) Download and initialize the apictl:
    
 https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#getting-started-with-wso2-api-controller-apictl
+Download apictl based on your preferred platform (i.e., Mac, Windows, Linux).
 
+- Extract the downloaded archive of the apictl to the desired location.
+- Navigate to the working directory where the executable apictl resides.
+- Add the current working directory to your system's $PATH variable to be able to access the executable from anywhere.
+- Execute the following command to start the apictl.
 
    
    
