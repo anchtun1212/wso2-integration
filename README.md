@@ -47,3 +47,5 @@
 # Deploy and run the integration
 1) Go to: https://wso2.com/api-manager
 2) Subscribe and then download: `wso2am-4.2.0` folder
+3) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/wso2am-4.2.0/bin`
+4) Run: `./api-manager.sh`
