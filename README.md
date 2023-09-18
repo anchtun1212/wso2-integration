@@ -71,6 +71,14 @@ In a similar manner, you can generate an access token using the Client Credentia
 
      e.g. `curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=client_credentials" -H "Authorization: Basic UTdhZmhRZGdmV1ZobjhrRlBYeXdtUzRFX09NYTpEM01RbFU1WW1iQWZJMmU2Mkd3OHZINWZ0XzBh"`
 
+# Associating User Accounts
+WSO2 Identity Server (WSO2 IS) allows you to associate multiple accounts you may have, and switch between accounts once you associate accounts. WSO2 IS also allows you to connect your federated user credentials with your WSO2 Identity Server account. This topic provides instructions on how to associate all your user accounts to the account with which you have logged on.
+If you want to associate user accounts of federated users via the dashboard, add the following configuration to the /repository/conf/deployment.toml file.
+
+     `[user.association]
+     enable_for_federated_users = true`
+     
+The recommended approach is to have the enable_for_federated_users parameter set to false so that manual federated user association is not allowed by default via the dashboard.
 
 
   
