@@ -52,4 +52,4 @@
 5) Open this URL to check: https://localhost:9443/devportal
 6) The default credentials `username/password` are: `admin/admin`
 7) Go to: https://localhost:9443/publisher to see APIs
-
+8) For `Authorization` you can use: `header: 'Authorization : Bearer ACCESS_TOKEN' or 'Authorization : Basic ACCESS_TOKEN' or 'apikey: API_KEY'"`
