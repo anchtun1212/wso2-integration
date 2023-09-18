@@ -51,3 +51,5 @@
 4) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./api-manager.sh`
 5) Open this URL to check: https://localhost:9443/devportal
 6) The default credentials `username/password` are: `admin/admin`
+7) Go to: https://localhost:9443/publisher to see APIs
+
