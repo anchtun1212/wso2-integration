@@ -186,3 +186,13 @@ Follow one of the two approaches below to associate all your user accounts:
     - Select the Federated as the Account Type from the dropdown provided, and enter the username and password.
       Click Associate to connect this user account to the WSO2 Identity Server account of the logged in user.
    - You can delete this user account association by clicking Remove on the Associated Accounts list.
+
+# Getting Started with WSO2 API Controller (apictl)
+WSO2 API Controller (apictl) is a command-line tool providing the capability to move APIs, API Products, and Applications across environments and to perform CI/CD operations. It can also be used to perform these same tasks on a Kubernetes deployment. Furthermore, it can perform WSO2 Micro Integrator (WSO2 MI) server specific operations such as monitoring Synapse artifacts and performing MI management/administrative tasks from the command line.
+
+1) Download and initialize the apictl: https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#getting-started-with-wso2-
+   api-controller-apictl
+   
+   
+
+
