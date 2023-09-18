@@ -122,9 +122,9 @@ There are 3 methods:
      
    - Run the following command to reset the password for your admin account.
 
-          bash chpasswd.sh --db-driver "<DB_DRIVER_CLASS>" --db-url "<DB_URL>" --db-username "<DB_USERNAME>" --db-password "<DB_PASSWORD>" --username "admin" --new-password "                    <NEW_PASSWORD>"
+   bash chpasswd.sh --db-driver "<DB_DRIVER_CLASS>" --db-url "<DB_URL>" --db-username "<DB_USERNAME>" --db-password "<DB_PASSWORD>" --username "admin" --new-password "<NEW_PASSWORD>"
      
-The following message is displayed if the password is updated successfully.
+   - The following message is displayed if the password is updated successfully.
 
           Password of user [username] updated successfully
           
