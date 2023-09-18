@@ -71,6 +71,28 @@ In a similar manner, you can generate an access token using the Client Credentia
 
      e.g. `curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=client_credentials" -H "Authorization: Basic UTdhZmhRZGdmV1ZobjhrRlBYeXdtUzRFX09NYTpEM01RbFU1WW1iQWZJMmU2Mkd3OHZINWZ0XzBh"`
 
+# WSO2 Carbon Product
+When you using a WSO2 Carbon Product (API Manager, Identity Server, Enterprise Integrator or Stream Processor) rather than a testing session in your local machine you should change the default passwords. In default, for ‘Super Tent’ admin account has the following credentials.
+
+     `Username: admin
+     Password: admin`
+
+There are 3 methods:
+
+     - At the first startup (Define a new password)
+     - Change password using the previous password (Change the password)
+     - Change password without the previous password (Reset the Password)
+
+1) At the first startup:
+   In this method, you only can define the admin login password before the first startup of the WSO2 product server. Therefore, you should modify admin password at the very begging 
+   of the server start.
+
+   In all WSO2 carbon products, user data stored database has been defined on user-mgt.xml file which is located at
+
+          `<PRODUCT_HOME>/repository/conf/user-mgt.xml`
+
+
+
 # Associating User Accounts
 WSO2 Identity Server (WSO2 IS) allows you to associate multiple accounts you may have, and switch between accounts once you associate accounts. WSO2 IS also allows you to connect your federated user credentials with your WSO2 Identity Server account. This topic provides instructions on how to associate all your user accounts to the account with which you have logged on.
 If you want to associate user accounts of federated users via the dashboard, add the following configuration to the /repository/conf/deployment.toml file.
