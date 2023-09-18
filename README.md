@@ -61,21 +61,21 @@
 
 The following cURL command shows how to generate an access token using the Password Grant type.
 
-     `curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=password&username=Username&password=Password" -H "Authorization: Basic Base64(consumer-key:consumer-secret)"`
+     curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=password&username=Username&password=Password" -H "Authorization: Basic Base64(consumer-key:consumer-secret)"
 
      e.g. ``curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=password&username=Username&password=Password" -H "Authorization: Basic UTdhZmhRZGdmV1ZobjhrRlBYeXdtUzRFX09NYTpEM01RbFU1WW1iQWZJMmU2Mkd3OHZINWZ0XzBh"``
 
 In a similar manner, you can generate an access token using the Client Credentials grant type with the following cURL command.
 
-     `curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=client_credentials" -H "Authorization: Basic Base64(consumer-key:consumer-secret)"`
+     curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=client_credentials" -H "Authorization: Basic Base64(consumer-key:consumer-secret)"
 
      e.g. `curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=client_credentials" -H "Authorization: Basic UTdhZmhRZGdmV1ZobjhrRlBYeXdtUzRFX09NYTpEM01RbFU1WW1iQWZJMmU2Mkd3OHZINWZ0XzBh"`
 
 # WSO2 Carbon Product
 When you using a WSO2 Carbon Product (API Manager, Identity Server, Enterprise Integrator or Stream Processor) rather than a testing session in your local machine you should change the default passwords. In default, for ‘Super Tent’ admin account has the following credentials.
 
-     `Username: admin
-     Password: admin`
+     Username: admin
+     Password: admin
 
 There are 3 methods:
 
@@ -89,7 +89,7 @@ There are 3 methods:
 
    In all WSO2 carbon products, user data stored database has been defined on user-mgt.xml file which is located at
 
-          `<PRODUCT_HOME>/repository/conf/user-mgt.xml`
+          <PRODUCT_HOME>/repository/conf/user-mgt.xml
 
 
 
