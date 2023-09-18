@@ -80,5 +80,22 @@ If you want to associate user accounts of federated users via the dashboard, add
      
 The recommended approach is to have the enable_for_federated_users parameter set to false so that manual federated user association is not allowed by default via the dashboard.
 
+Follow one of the two approaches below to associate all your user accounts:
+
+1) Using the AdminService:
+
+   The first approach is to use the AdminService. You can access this admin service using the following URL: `https://<HOST_NAME>:9443/services/UserAccountAssociationService?wsdl`.
+
+   If you are new to admin services, see Calling Admin Services.
+
+The following actions can be performed using above admin service.
+
+ - Create a new user account association
+- Delete an existing user account association
+- Get all associated user accounts of the logged in user
+- Switch between associated user accounts without re-authenticate with the system
+
+
+
 
   
