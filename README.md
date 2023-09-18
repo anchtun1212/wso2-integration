@@ -92,6 +92,26 @@ There are 3 methods:
         <PRODUCT_HOME>/repository/conf/user-mgt.xml
         e.g. /home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/repository/conf
 
+   You can change the admin login password parameter in the user-mgt.xml file. Then start the product and login to the carbon console with new credentials.
+   After the first startup, all the credentials will store in the user database and you would not able to change it from the above file. So you can only change it (where the change 
+   is actually effective) before you start the WSO2 carbon product for the first time.
+   
+2) Change password using the previous password:
+   - After the first startup the WSO2 product, you would not be able to change the admin password by the above method. However, we can easily change the admin login password by 
+     login to carbon console that is available through the browser. You should have the previous admin credentials to login carbon console first.
+   - Go to carbon management console using your favorite browser. ( default path is: https://localhost:9943/carbon).
+   - Login with the admin credentials (default is admin/admin).
+   - On the Main tab, click List under Users and Roles.
+   - To change the admin password, click Change My Password, enter your current admin password and new admin password, and click Change. 
+
+3) Change password without the previous password:
+   - What would happen, if you have forgotten the admin password (and therefore cannot access the Management Console) or you do not have the credentials with you. Do not worry, not 
+     everything is lost yet and still, you can change the admin password with this method.
+   - If you have not installed “ant” in your server, install it by running following command. ( Apache Ant is a prerequisite for this method)
+     
+          sudo apt-get install ant
+     
+
 
 
 # Associating User Accounts
@@ -129,10 +149,10 @@ Follow one of the two approaches below to associate all your user accounts:
     - You can see all associated accounts of the user that you logged in as. This table includes the user ID and identity provider of all the associated user accounts of the user.
     - You can initiate a new user account association by clicking the Add Association button under Associated Accounts.
     - Select Local as the Account Type, and enter the username and password of the user account that you want to connect to.
-      Click Associate to associate this user account.  If it is authentic, WSO2 Identity Server authenticates the user account and saves that user account as an association to the user account of the logged in user.
+      Click Associate to associate this user account.  If it is authentic, WSO2 Identity Server authenticates the user account and saves that user account as an association to the         user account of the logged in user.
     - You can delete this user account association by clicking Remove in the Associated Accounts list.
-    - You can also switch between associated user accounts without having to re-authenticate the user account with the Identity Server. In the user dashboard UI, the associated user accounts appear under the dropdown list at the top 
-      right corner of your screen. You can switch between accounts by selecting the required user account from the dropdown. Note that the session key does not change during this operation.
+    - You can also switch between associated user accounts without having to re-authenticate the user account with the Identity Server. In the user dashboard UI, the associated user       accounts appear under the dropdown list at the top 
+      right corner of your screen. You can switch between accounts by selecting the required user account from the dropdown. Note that the session key does not change during this          operation.
 
     Managing federated user IDs
 
