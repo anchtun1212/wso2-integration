@@ -1,3 +1,7 @@
+# TIPS: Swagger documents of API artifacts
+1) To access the swagger.json file, use the following URL: `http://<MI_HOST>:8290/<API_NAME>?swagger.json` e.g. `http://localhost:8290/HealthcareAPI?swagger.json`
+2) To access the swagger.yaml file, use the following URL: `http://<MI_HOST>:8290/<API_NAME>?swagger.yaml` e.g. `http://localhost:8290/HealthcareAPI?swagger.yaml`
+
 # Getting started with WSO2 Micro Integrator CLI Tool
 1) Go to: https://wso2.com/integration/micro-integrator/tooling/ and download Linux version.
 2) Navigate to: `<MI_HOME>/bin` e.g.: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/WSO2-Integration-Studio-8.0.0/runtime/microesb/bin`
