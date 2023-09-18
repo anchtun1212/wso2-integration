@@ -89,7 +89,8 @@ There are 3 methods:
 
    In all WSO2 carbon products, user data stored database has been defined on user-mgt.xml file which is located at
 
-          <PRODUCT_HOME>/repository/conf/user-mgt.xml
+        <PRODUCT_HOME>/repository/conf/user-mgt.xml
+        e.g. /home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/repository/conf
 
 
 
