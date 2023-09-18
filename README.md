@@ -199,7 +199,7 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 - Navigate to the working directory where the executable apictl resides.
 - Add the current working directory to your system's $PATH variable to be able to access the executable from anywhere.
   
-            export PATH=/home/mohammedayman/projects/sme/fundingGate/integration/apictl-4.0.4-linux-x64/apictl:$PATH
+       export PATH=/home/mohammedayman/projects/sme/fundingGate/integration/apictl-4.0.4-linux-x64/apictl:$PATH
 - Execute the following command to start the apictl: `apictl`
 
    
