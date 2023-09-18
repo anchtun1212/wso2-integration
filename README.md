@@ -53,3 +53,14 @@
 6) The default credentials `username/password` are: `admin/admin`
 7) Go to: https://localhost:9443/publisher to see APIs
 8) For `Authorization` you can use: `header: 'Authorization : Bearer ACCESS_TOKEN' or 'Authorization : Basic ACCESS_TOKEN' or 'apikey: API_KEY'"`
+9) CURL to Generate Access Token:
+
+  The following cURL command shows how to generate an access token using the Password Grant type:
+
+  `curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=password&username=Username&password=Password" -H "Authorization: Basic UTdhZmhRZGdmV1ZobjhrRlBYeXdtUzRFX09NYTpEM01RbFU1WW1iQWZJMmU2Mkd3OHZINWZ0XzBh"`
+
+  In a similar manner, you can generate an access token using the Client Credentials grant type with the following cURL command:
+
+  `curl -k -X POST https://localhost:9443/oauth2/token -d "grant_type=client_credentials" -H "Authorization: Basic UTdhZmhRZGdmV1ZobjhrRlBYeXdtUzRFX09NYTpEM01RbFU1WW1iQWZJMmU2Mkd3OHZINWZ0XzBh"`
+
+  
