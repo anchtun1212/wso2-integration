@@ -3,7 +3,7 @@
 2) Navigate to: `<MI_HOME>/bin` e.g.: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/WSO2-Integration-Studio-8.0.0/runtime/microesb/bin`
 3) MI is supported only on JDK 1.8, 9, 10 and 11
 4) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./micro-integrator.sh -DenableManagementApi` to enable the `enableManagementApi` system property
-5) `export PATH=/path/to/mi/cli/directory/bin:$PATH` e.g. `export PATH=/home/mohammedayman/projects/sme/fundingGate/integration/wso2mi-cli-1.2.0/bin:$PATH`
+5) (Optional you can use step 4) only)`export PATH=/path/to/mi/cli/directory/bin:$PATH` e.g. `export PATH=/home/mohammedayman/projects/sme/fundingGate/integration/wso2mi-cli-1.2.0/bin:$PATH`
 6) Run: `mi`
 
 # Using the Management API
@@ -47,5 +47,5 @@
 # Deploy and run the integration
 1) Go to: https://wso2.com/api-manager
 2) Subscribe and then download: `wso2am-4.2.0` folder
-3) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/wso2am-4.2.0/bin`
-4) Run: `./api-manager.sh`
+3) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/bin`
+4) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./api-manager.sh`
