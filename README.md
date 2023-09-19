@@ -309,8 +309,14 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   --apim https://localhost:9443 \
                   --mi https://localhost:9164
 
-          - Remove an environment:
+        - Remove an environment:
 
                   apictl remove env <environment-name> e.g.apictl remove env production
 
-        
+        - Get environments:
+
+                apictl get envs
+
+                Flags:
+                  Optional :
+                  --format : pretty-print environments using templates
