@@ -328,7 +328,8 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   apictl login <environment-name> -u <username> 
                   apictl login <environment-name> -u <username> -p <password>
                   if you got certification error Run: apictl -k login test
-                  If you run apictl login <environment-name> you are prompted to provide both the username and the password. If you run apictl login <environment-name> --username                      <username>, you are prompted to provide the password.                
+                  If you run apictl login <environment-name> you are prompted to provide both the username and the password.
+                  If you run apictl login <environment-name> --username <username>, you are prompted to provide the password.                
                   Flags:
                   Optional :
                   --username or -u : Username for login
@@ -337,11 +338,14 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   Example:
                   apictl login dev 
                   apictl login dev -u admin -p admin 
-                  apictl login dev --username admin --password admin 
+                  apictl login dev --username admin --password admin
+                  Using --password in apictl is not secure. You can use --password-stdin instead.
+                  For example: cat ~/.mypassword | ./apictl login dev --username admin --password-stdin 
           
         - Logout from an environment:
 
                   apictl logout <environment-name> e.g. apictl logout dev
 
+        - For other options (Set HTTP request timeout, Set TLS renegotiation mode, Set export directory, SSL) see the link above
           
               
