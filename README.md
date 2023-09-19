@@ -266,5 +266,21 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                      --devportal <developer-portal-endpoint> \
                      --mi <mi-management-endpoint>
      
-        -
-        - 
+        Flags: To add a WSO2 API-M
+
+         Required :
+         (either)
+         --apim : API Manager endpoint for the environments
+         OR (the following 4)
+         --registration : Registration endpoint for the environment
+         --admin : Admin endpoint for the environment
+         --publisher : Publisher Portal endpoint for the environment
+         --devportal : Developer Portal endpoint for the environment
+         
+         Optional :
+         --token : Token endpoint for the environment
+         
+         To add a WSO2 MI
+         
+         Required :
+         --mi : Management endpoint of the Micro Integrator
