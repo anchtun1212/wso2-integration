@@ -1,3 +1,6 @@
+# Previous releases
+https://wso2.com/api-manager/previous-releases/
+
 # TIPS: Full Deployment/Test Process
 1) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/WSO2-Integration-Studio-8.0.0/runtime/microesb/bin`
 2) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./micro-integrator.sh -DenableManagementApi`
