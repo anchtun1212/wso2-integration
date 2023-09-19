@@ -254,4 +254,16 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
       
             apictl add env <environment-name>
 
-   7) 
+      - Make sure that the WSO2 API Manager (WSO2 API-M) 4.0.0 version is started and that the 4.0.4 version of apictl is set up.
+      - Run the following apictl command to add an environment:
+        
+           apictl add env <environment-name> \
+                  --registration <client-registration-endpoint> \
+                  --apim <API-Manager-endpoint> \
+                  --token <token-endpoint> \
+                  --admin <admin-REST-API-endpoint> \
+                  --publisher <publisher-portal-endpoint> \
+                  --devportal <developer-portal-endpoint> \
+                  --mi <mi-management-endpoint>
+
+        - 
