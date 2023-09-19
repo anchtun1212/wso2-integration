@@ -303,6 +303,10 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 
                  apictl add env dev \
                      --mi https://localhost:9164
-        
+        - Adding both WSO2 API-M and WSO2 MI to an environment:
+
+                apictl add env local \
+                  --apim https://localhost:9443 \
+                  --mi https://localhost:9164
 
         
