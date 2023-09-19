@@ -3,7 +3,7 @@
 2) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./micro-integrator.sh -DenableManagementApi`
 3) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`. e.g. put: `HealthcareProjectCompositeExporter_1.0.0-SNAPSHOT.car`
 4) Go to https://localhost:9443/publisher and try to create a new API > Import Open API > and import the file (json or yaml) from `http://<MI_HOST>:8290/<API_NAME>?swagger.yaml`
-   and follow the steps: see the video attached in the `private project`.
+   and follow the steps: see the video attached in the `private project: support`.
 
 # TIPS: Swagger documents of API artifacts
 1) To access the swagger.json file, use the following URL: `http://<MI_HOST>:8290/<API_NAME>?swagger.json` e.g. `http://localhost:8290/HealthcareAPI?swagger.json`
