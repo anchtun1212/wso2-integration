@@ -404,4 +404,22 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
       Before you begin...
          - Make sure you have already created an environment to which you are planning to import the API.
          - Make sure you have logged-in to the importing environment.
-             
+         - After editing the mandatory fields in the API Project, you can import the API to an environment using any of the following commands.
+                 apictl import api -f <path to API Project> -e <environment> 
+                 apictl import api --file <path to API Project> --environment <environment> --rotate-revision
+                 apictl import api --file <path to API Project> --environment <environment> --params=<environment params file>
+                 Flags:
+                     Required :
+                     --file or -f : The file path of the API project to import.
+                     --environment or -e : Environment to which the API should be imported.
+                     Optional :
+                     --rotate-revision : If the maximum revision limit reached, delete the oldest revision and create a new revision.
+                     --skip-deployments : Skip the deployment environments specified in the project and only update the current API of the API.
+                     --preserve-provider : Preserve the existing provider of API after importing. The default value is true.
+                     --update : Update an existing API or create a new API in the importing environment.
+                     --params : Provide a API Manager environment params file. For more information, see Configuring Environment Specific Parameters.
+                     --skip-cleanup : Leave all temporary files created in apictl during import process. The default value is false.
+                     Example                    
+                     apictl import api -f ~/myapi -e production 
+                     apictl import api --file ~/myapi --environment production --rotate-revision
+                     apictl import api --file ~/myapi --environment production --params prod/params.yaml  
