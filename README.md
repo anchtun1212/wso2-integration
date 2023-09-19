@@ -221,7 +221,7 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
   https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach/
   
   WSO2 API Controller (`apictl`) allows you to create and deploy APIs without using the Publisher Portal of the WSO2 API Manager (WSO2 API-M). 
-  You can use this feature to create an API from scratch or using an existing Swagger or Open API specification and then deploy it to the desired WSO2 API-M environment.
+  You can use this feature to create an API `from scratch` or `using an existing Swagger or Open API specification` and then deploy it to the desired WSO2 API-M environment.
    1)  `export PATH=/home/mohammedayman/projects/sme/fundingGate/integration/apictl-4.0.4-linux-x64/apictl:$PATH`.
    2)  The directory structure for the configuration files (`<USER_HOME>/.wso2apictl`) will be created upon the execution of the apictl command.
    3)  If you want to change the default location for the .wso2apictl directory, set an environment variable (APICTL_CONFIG_DIR) as follows with the path for the desired location:
@@ -348,4 +348,14 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 
         - For other options (Set HTTP request timeout, Set TLS renegotiation mode, Set export directory, SSL) see the link above
           
-              
+   7) From Scratch:
+
+      - Open a terminal window and navigate to the path you need to create the project.
+
+                 apictl init <Project Path>   
+                 apictl init <Project Path> --definition <API definition template file>  --force=<force create project>
+                 Example
+                 apictl init SampleAPI
+                 apictl init SampleAPI --definition definition.yaml --force=true
+
+        
