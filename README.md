@@ -424,5 +424,14 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                      apictl import api -f ~/myapi -e production 
                      apictl import api --file ~/myapi --environment production --rotate-revision
                      apictl import api --file ~/myapi --environment production --params prod/params.yaml
-
+                     When using the --update flag with the import api command, apictl will check if the given API exists in the targeted environment. If the API exists, it will                           update the existing API. If not, it will create a new API in the imported environment.
+                     Changes to the import command with the revision support for APIs
+                     From WSO2 API-M 4.0.0 onwards, you have to create a new revision in order to deploy an API in a Gateway environment and only a revision can be deployed in a 
+                     Gateway environment.
+                     With the import command of the apictl, if the API project has specified the deployment environments, the import will first update the current API of the API.
+                     If the number of revisions created for that API do not exceed the max revision limit of 5, a new revision of that API will be created and that revision will be 
+                     deployed in the specified Gateway environments.
+                     If the max revision numbers are reached, the imported API will only update the current API and not be deployed in the specified Gateway environments.
+                     You can use the --rotate-revision flag with the import command and if the max revision limit is reached, the import operation will delete the earliest revision 
+                     for that API and create a new revision. This new revision will be deployed in the specified Gateway environments.
       
