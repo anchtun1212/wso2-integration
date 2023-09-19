@@ -285,7 +285,13 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                Required :
                --mi : Management endpoint of the Micro Integrator
 
-              When adding an environment, when the optional flags are not given, apictl will automatically derive those from --apim flag value.
-              You can either provide only the flag --apim , or all the other 4 flags (--registration, --publisher, --devportal, --admin) without providing --apim flag. If you are                  omitting         any of --registration, --publisher, --devportal, --admin flags, you need to specify --apim flag with the WSO2 API-M endpoint. In both of the above                   cases --token flag is              optional and can be used to provide a user-preferred token endpoint. You can use the --mi flag to add a Micro Integrator instance to               an environment.
+              When adding an environment, when the optional flags are not given, apictl will automatically derive those from `--apim` flag value.
+        
+              You can either provide only the flag `--apim` , or all the other 4 flags (`--registration`, `--publisher`, `--devportal`, `--admin`)
+              without providing --apim flag.
+              If you are omitting any of `--registration`, `--publisher`, `--devportal`, `--admin` flags,
+              you need to specify `--apim` flag with the WSO2 API-M endpoint. In both of the above cases
+              `--token` flag is optional and can be used to provide a user-preferred token endpoint.
+              You can use the `--mi` flag to add a Micro Integrator instance to an environment.
 
         
