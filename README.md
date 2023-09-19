@@ -359,5 +359,13 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                  apictl init SampleAPI
                  apictl init SampleAPI --definition definition.yaml --force=true
         
+   8) From OpenAPI/Swagger Specification:
+      You can use a Swagger2 and OpenAPI3 specification to generate an API. The file format should be YAML or JSON.
 
+                  apictl init <Project Path> --oas <Path to API specification>
+                  apictl init <Project Path> --oas <Path to API specification> --definition <API definition template file> --force=<force create project>
+                  Example
+                  apictl init Petstore --oas petstore.yaml
+                  apictl init Petstore --oas https://petstore.swagger.io/v2/swagger.json
+                  apictl init Petstore --oas petstore.yaml --definition definition.yaml --force=true 
         
