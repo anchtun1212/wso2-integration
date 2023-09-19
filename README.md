@@ -369,5 +369,8 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   Example
                   apictl init Petstore --oas petstore.yaml
                   apictl init Petstore --oas https://petstore.swagger.io/v2/swagger.json
-                  apictl init Petstore --oas petstore.yaml --definition definition.yaml --force=true 
+                  apictl init Petstore --oas petstore.yaml --definition definition.yaml --force=true
+                  In my case: apictl init FundingGate --oas fundinggate.yaml --definition fundinggate.yaml --force=true
+        
+        
         
