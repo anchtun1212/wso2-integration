@@ -371,8 +371,8 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   apictl init Petstore --oas https://petstore.swagger.io/v2/swagger.json
                   apictl init Petstore --oas petstore.yaml --definition definition.yaml --force=true
                   In my case: apictl init FundingGate --oas fundinggate.yaml --definition fundinggate.yaml --force=true
+                  Info:
                   When you initialize an API project using an OpenAPI specification, apictl will automatically read the OpenAPI definition and populate a certain set of configs in                     the API definition file, api.yaml.
-                  Info
                   Flags:
                   Optional :
                   --definition or -d : Provide a YAML definition of API
