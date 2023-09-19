@@ -201,7 +201,7 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
   
        export PATH=/home/mohammedayman/projects/sme/fundingGate/integration/apictl-4.0.4-linux-x64/apictl:$PATH
 - Execute the following command to start the apictl: `apictl`
-
+- For more details: https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#add-an-environment
    
    
 
