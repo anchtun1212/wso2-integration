@@ -405,6 +405,7 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
          - Make sure you have already created an environment to which you are planning to import the API.
          - Make sure you have logged-in to the importing environment.
          - After editing the mandatory fields in the API Project, you can import the API to an environment using any of the following commands.
+           
                  apictl import api -f <path to API Project> -e <environment> 
                  apictl import api --file <path to API Project> --environment <environment> --rotate-revision
                  apictl import api --file <path to API Project> --environment <environment> --params=<environment params file>
@@ -422,4 +423,6 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                      Example                    
                      apictl import api -f ~/myapi -e production 
                      apictl import api --file ~/myapi --environment production --rotate-revision
-                     apictl import api --file ~/myapi --environment production --params prod/params.yaml  
+                     apictl import api --file ~/myapi --environment production --params prod/params.yaml
+
+      
