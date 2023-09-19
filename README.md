@@ -338,5 +338,10 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   apictl login dev 
                   apictl login dev -u admin -p admin 
                   apictl login dev --username admin --password admin 
+          
+        - Logout from an environment:
 
-            
+                  apictl logout <environment-name> e.g. apictl logout dev
+
+          
+              
