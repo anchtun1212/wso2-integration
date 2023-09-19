@@ -453,4 +453,39 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                      If the max revision numbers are reached, the imported API will only update the current API and not be deployed in the specified Gateway environments.
                      You can use the --rotate-revision flag with the import command and if the max revision limit is reached, the import operation will delete the earliest revision 
                      for that API and create a new revision. This new revision will be deployed in the specified Gateway environments.
+
+# CMDs
+
+            Go to: https://localhost:9443/carbon
+            create a new user:devops with this role: Internal/devops          
+            cd ~
+            mkdir vcs
+            cd vcs;mkdir Source;mkdir Deployment
+            apictl set --vcs-source-repo-path /home/mohammedayman/vcs/Source/
+            apictl set --vcs-deployment-repo-path /home/mohammedayman/vcs/Deployment/
+            apictl add env development --apim https://localhost:9443
+            apictl add env production --apim https://localhost:9444
+            apictl -k login development
+            => username: devops / password: 123456
+            You should deplo/pulish the application then:
+            apictl -k export api -n PizzaShackAPI -v 1.0.0 -e development
+            tree /home/mohammedayman/.wso2apictl/exported/apis
+            unzip /home/mohammedayman/.wso2apictl/exported/apis/development/PizzaShackAPI_1.0.0.zip -d ~/vcs/Source/
+            apictl gen deployment-dir -s Source/PizzaShackAPI-1.0.0 -d Deployment/
+            cd Deployment/
+            git init
+            apictl vcs init ==> vcs.yaml file will be created
+            git add .
+            git commit -m "Add new specific configs"
+            cd ../Source/
+            git init
+            apictl vcs init ==> vcs.yaml file will be created
+            git add .
+            git commit -m "Add Projects"
+            apictl -k login production
+            => username: devops / password: 123456
+            apictl -k vcs deploy -e production
+
+            
+           
       
