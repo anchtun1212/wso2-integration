@@ -249,7 +249,8 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 
             apictl set --mode kubernetes
 
-      7) 
+       6) Add an environment: You can add environments by either manually editing the `<USER_HOME>/.wso2apictl/main_config.yaml` e.g. `/home/mohammedayman/.wso2apictl/main_config.yaml` 
+       file or by running the following apictl command: `apictl add env <environment-name>`
        
 
             
