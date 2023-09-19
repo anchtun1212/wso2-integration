@@ -139,8 +139,6 @@ There are 3 methods:
           
    - Login to the carbon management console with new admin credentials.
 
-
-
 # Associating User Accounts
 WSO2 Identity Server (WSO2 IS) allows you to associate multiple accounts you may have, and switch between accounts once you associate accounts. WSO2 IS also allows you to connect your federated user credentials with your WSO2 Identity Server account. This topic provides instructions on how to associate all your user accounts to the account with which you have logged on.
 If you want to associate user accounts of federated users via the dashboard, add the following configuration to the /repository/conf/deployment.toml file.
@@ -346,7 +344,9 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 
                   apictl logout <environment-name> e.g. apictl logout dev
 
-        - For other options (Set HTTP request timeout, Set TLS renegotiation mode, Set export directory, SSL) see the link above
+        - For other options (Set HTTP request timeout, Set TLS renegotiation mode, Set export directory, SSL) see the link:
+       
+          https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#add-an-environment
           
    7) From Scratch:
 
@@ -379,6 +379,23 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   --definition or -d : Provide a YAML definition of API
                   --oas : Provide an OpenAPI specification file/URL for the API
                   --force or -f : To overwrite the directory and create the project
+
+        A project folder with the following default structure will be created in the given directory.
+
+                  
+                  ├── api.yaml
+                  ├── api_meta.yaml
+                  ├── deployment_environments.yaml
+                  ├── Client-certificates
+                  ├── Definitions
+                  │   └── swagger.yaml
+                  ├── Docs
+                  ├── Endpoint-certificates
+                  ├── Image
+                  └── Sequences
+                      ├── fault-sequence
+                      ├── in-sequence
+                      └── out-sequence
         
         
         
