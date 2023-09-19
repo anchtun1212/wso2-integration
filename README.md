@@ -228,5 +228,12 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 
              export APICTL_CONFIG_DIR="/home/wso2user/CLI"
        
-   5) 
+   4) Global flags for apictl:
+      
+            --verbose
+                Enable verbose logs (Provides more information on execution)
+            --insecure, -k
+                Allow connections to SSL sites without certs
+            --help, -h
+                Display information and example usage of a command
 
