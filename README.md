@@ -355,7 +355,9 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                  apictl init <Project Path>   
                  apictl init <Project Path> --definition <API definition template file>  --force=<force create project>
                  Example
+                 cd /home/mohammedayman/projects/sme/fundingGate/integration/myProjects
                  apictl init SampleAPI
                  apictl init SampleAPI --definition definition.yaml --force=true
+        
 
         
