@@ -327,5 +327,16 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   apictl login <environment-name> 
                   apictl login <environment-name> -u <username> 
                   apictl login <environment-name> -u <username> -p <password>
-                  if you got certification error call: apictl -k login test
+                  if you got certification error Run: apictl -k login test
+                  If you run apictl login <environment-name> you are prompted to provide both the username and the password. If you run apictl login <environment-name> --username                      <username>, you are prompted to provide the password.                
+                  Flags:
+                  Optional :
+                  --username or -u : Username for login
+                  --password or -p : Password for login
+                  --password-stdin : Get password from stdin
+                  Example:
+                  apictl login dev 
+                  apictl login dev -u admin -p admin 
+                  apictl login dev --username admin --password admin 
+
             
