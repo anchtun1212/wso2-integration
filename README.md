@@ -213,6 +213,12 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 - For `environment` and for more details:
 
   https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getting-started-with-wso2-api-controller/#add-an-environment
+
+# Importing APIs Via Dev First Approach
+
+You can see this:
+
+https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/managing-apis-api-products/importing-apis-via-dev-first-approach/
   
    
    
