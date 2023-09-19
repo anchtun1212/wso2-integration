@@ -398,4 +398,9 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                       └── out-sequence
         
         
-        
+   9) Import an API project:
+       
+      Before you begin...
+         - Make sure you have already created an environment to which you are planning to import the API.
+         - Make sure you have logged-in to the importing environment.
+             
