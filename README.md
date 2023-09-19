@@ -326,4 +326,6 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
             
                   apictl login <environment-name> 
                   apictl login <environment-name> -u <username> 
-                  apictl login <environment-name> -u <username> -p <password> 
+                  apictl login <environment-name> -u <username> -p <password>
+                  if you got certification error call: apictl -k login test
+            
