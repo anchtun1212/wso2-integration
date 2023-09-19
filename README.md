@@ -226,6 +226,7 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
    2)  The directory structure for the configuration files (`<USER_HOME>/.wso2apictl`) will be created upon the execution of the apictl command.
    3)  If you want to change the default location for the .wso2apictl directory, set an environment variable (APICTL_CONFIG_DIR) as follows with the path for the desired location:
 
-          export APICTL_CONFIG_DIR="/home/wso2user/CLI"
-   4) 
+             export APICTL_CONFIG_DIR="/home/wso2user/CLI"
+       
+   5) 
 
