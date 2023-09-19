@@ -294,10 +294,15 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
               `--token` flag is optional and can be used to provide a user-preferred token endpoint.
               You can use the `--mi` flag to add a Micro Integrator instance to an environment.
 
-        - Adding a WSO2 API-M to an environment using --apim flag:
+        - Adding a WSO2 API-M to an environment using `--apim` flag:
 
                 apictl add env dev \
                   --apim https://localhost:9443
-          
+
+        - Adding a WSO2 MI to an environment using `--mi` flag:
+
+                 apictl add env dev \
+                     --mi https://localhost:9164
+        
 
         
