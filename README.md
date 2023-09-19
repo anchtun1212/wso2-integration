@@ -337,7 +337,7 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                   apictl login dev 
                   apictl login dev -u admin -p admin 
                   apictl login dev --username admin --password admin
-                  Use this: apictl -k login dev -u admin -p admin 
+                  apictl -k login dev -u admin -p admin 
                   Using --password in apictl is not secure. You can use --password-stdin instead.
                   For example: cat ~/.mypassword | ./apictl login dev --username admin --password-stdin 
           
