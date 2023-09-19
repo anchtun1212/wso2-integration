@@ -245,7 +245,9 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 
             apictl set --mode <mode>
 
+
             apictl set --mode default
+
 
             apictl set --mode kubernetes
 
