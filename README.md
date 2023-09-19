@@ -320,3 +320,9 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
                 Flags:
                   Optional :
                   --format : pretty-print environments using templates
+
+        - Login to an environment:
+          - After adding an environment, you can log in to the WSO2 API-M instance in that environment using credentials.
+                  apictl login <environment-name> 
+                  apictl login <environment-name> -u <username> 
+                  apictl login <environment-name> -u <username> -p <password> 
