@@ -1,5 +1,6 @@
-# Previous releases
+# Previous releases && List Ports
 https://wso2.com/api-manager/previous-releases/
+https://apim.docs.wso2.com/en/latest/install-and-setup/setup/reference/default-product-ports/#api-m-ports
 
 # TIPS: Full Deployment/Test Process
 1) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/WSO2-Integration-Studio-8.0.0/runtime/microesb/bin`
