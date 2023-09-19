@@ -296,6 +296,15 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 
                 apictl add env dev \
                   --apim https://localhost:9443
+     
+        - Adding a WSO2 API-M to an environment using --registration, --publisher, --devportal, --admin flags
+
+                apictl add env production \
+                  --registration https://idp.com:9444 \
+                  --admin https://apim.com:9444 \
+                  --publisher https://apim.com:9444 \
+                  --devportal https://apps.com:9444 \
+                  --token https://gw.com:8244/token   
 
         - Adding a WSO2 MI to an environment using `--mi` flag:
 
