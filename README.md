@@ -1,3 +1,10 @@
+# TIPS: Full Deployment/Test Process
+1) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/WSO2-Integration-Studio-8.0.0/runtime/microesb/bin`
+2) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./micro-integrator.sh -DenableManagementApi`
+3) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`. e.g. put: `HealthcareProjectCompositeExporter_1.0.0-SNAPSHOT.car`
+4) Go to https://localhost:9443/publisher and try to create a new API > Import Open API > and import the file (json or yaml) from `http://<MI_HOST>:8290/<API_NAME>?swagger.yaml`
+   and follow the steps: see the video attached.
+
 # TIPS: Swagger documents of API artifacts
 1) To access the swagger.json file, use the following URL: `http://<MI_HOST>:8290/<API_NAME>?swagger.json` e.g. `http://localhost:8290/HealthcareAPI?swagger.json`
 2) To access the swagger.yaml file, use the following URL: `http://<MI_HOST>:8290/<API_NAME>?swagger.yaml` e.g. `http://localhost:8290/HealthcareAPI?swagger.yaml`
@@ -26,7 +33,7 @@
 # Test the application using CLI
 1) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/integration studio/WSO2-Integration-Studio-8.0.0/runtime/microesb/bin`
 
-   then Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./micro-integrator.sh -DenableManagementApi`
+2) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./micro-integrator.sh -DenableManagementApi`
 3) Put the `car` file into: `<MI_HOME>/repository/deployment/server/carbonapps` : `Car= Carbon Apps`. e.g. put: `HealthcareProjectCompositeExporter_1.0.0-SNAPSHOT.car`
 4) Run: `mi remote login  [username] [password]` e.g. `mi remote login admin admin`.
 5) NOTE: The default remote will be the micro integrator instance running on localhost with the port 9164.
