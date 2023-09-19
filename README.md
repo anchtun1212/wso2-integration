@@ -222,5 +222,5 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
   
   WSO2 API Controller (`apictl`) allows you to create and deploy APIs without using the Publisher Portal of the WSO2 API Manager (WSO2 API-M). 
   You can use this feature to create an API from scratch or using an existing Swagger or Open API specification and then deploy it to the desired WSO2 API-M environment.
-  
+   1)  export PATH=/home/mohammedayman/projects/sme/fundingGate/integration/apictl-4.0.4-linux-x64/apictl:$PATH
 
