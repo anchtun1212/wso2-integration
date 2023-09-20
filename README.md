@@ -80,13 +80,24 @@ https://apim.docs.wso2.com/en/latest/install-and-setup/setup/reference/default-p
          Start the server: sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh
          Start the server in background mode: sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh start
          Stop the server: sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh stop
+         You can change the default ports:
+         sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh -DportOffset=1
+         or change the `offset` in the `deployment.toml` file:
+         [server]
+         hostname = "localhost"
+         #offset=1
+         so the URLs will be:
+         CarbonUIServiceComponent Mgt Console URL  : https://localhost:9444/carbon/
+         CarbonUIServiceComponent API Developer Portal Default Context : https://localhost:9444/devportal
+         CarbonUIServiceComponent API Publisher Default Context : https://localhost:9444/publisher
+         This is useful when you want to make many environments.
 
-7) Database location: `/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/repository/database/WSO2SHARED_DB.mv.db` ... 
-8) Open this URL to check: https://localhost:9443/devportal
-9) The default credentials `username/password` are: `admin/admin`
-10) Go to: https://localhost:9443/publisher to see APIs
-11) For `Authorization` you can use: `header: 'Authorization : Bearer ACCESS_TOKEN' or 'Authorization : Basic ACCESS_TOKEN' or 'apikey: API_KEY'"`
-12) CURL to Generate Access Token:
+6) Database location: `/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/repository/database/WSO2SHARED_DB.mv.db`, WSO2AM_DB ... 
+7) Open this URL to check: https://localhost:9443/devportal
+8) The default credentials `username/password` are: `admin/admin`
+9) Go to: https://localhost:9443/publisher to see APIs
+10) For `Authorization` you can use: `header: 'Authorization : Bearer ACCESS_TOKEN' or 'Authorization : Basic ACCESS_TOKEN' or 'apikey: API_KEY'"`
+11) CURL to Generate Access Token:
 
 The following cURL command shows how to generate an access token using the Password Grant type.
 
