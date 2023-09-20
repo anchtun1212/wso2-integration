@@ -6,9 +6,9 @@ See this video, Change API Context:
 https://www.youtube.com/watch?v=-q2BacTL7jM
 
          Ignore the version number to be called in the context path:
-         https://localhost:8243/context/methosName
+         https://localhost:8243/context/methodName
          INSTEAD OF
-         https://localhost:8243/context/versionNumber/methosName
+         https://localhost:8243/context/versionNumber/methodName
          Just go to: API > Overview > Develop > Portal Configurations > basic Info > Make this the default version > Yes
 
 # Previous releases/List Ports
