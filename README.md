@@ -1,5 +1,5 @@
 # !!!!!!!IMPORTANT!!!!!!!
-`USE THE VERSION 4.0.0 instead of wso2am-4.0.0`
+`USE THE VERSION 4.0.0 instead of wso2am-4.2.0`
 
 See this video, Change API Context:
 
