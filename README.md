@@ -75,11 +75,16 @@ https://apim.docs.wso2.com/en/latest/install-and-setup/setup/reference/default-p
 2) Subscribe and then download: `wso2am-4.2.0` folder
 3) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/bin`
 4) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./api-manager.sh`
-5) Open this URL to check: https://localhost:9443/devportal
-6) The default credentials `username/password` are: `admin/admin`
-7) Go to: https://localhost:9443/publisher to see APIs
-8) For `Authorization` you can use: `header: 'Authorization : Bearer ACCESS_TOKEN' or 'Authorization : Basic ACCESS_TOKEN' or 'apikey: API_KEY'"`
-9) CURL to Generate Access Token:
+5) To `start` and `shutdown` you can use:
+   
+         sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh start
+         sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh shutdown
+   
+7) Open this URL to check: https://localhost:9443/devportal
+8) The default credentials `username/password` are: `admin/admin`
+9) Go to: https://localhost:9443/publisher to see APIs
+10) For `Authorization` you can use: `header: 'Authorization : Bearer ACCESS_TOKEN' or 'Authorization : Basic ACCESS_TOKEN' or 'apikey: API_KEY'"`
+11) CURL to Generate Access Token:
 
 The following cURL command shows how to generate an access token using the Password Grant type.
 
