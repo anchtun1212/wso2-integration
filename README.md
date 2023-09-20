@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=-q2BacTL7jM
          https://localhost:8243/context/methodName
          INSTEAD OF
          https://localhost:8243/context/versionNumber/methodName
-         Just go to: API > Overview > Develop > Portal Configurations > basic Info > Make this the default version > Yes
+         Just go to: API > Overview > Develop > Portal Configurations > Basic Info > Make this the default version > Yes
 
 # Previous releases/List Ports
 https://wso2.com/api-manager/previous-releases/
