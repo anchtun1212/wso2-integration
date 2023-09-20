@@ -79,7 +79,7 @@ https://apim.docs.wso2.com/en/latest/install-and-setup/setup/reference/default-p
    
          Start the server: sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh
          Start the server in background mode: sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh start
-         Start the server: sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh stop
+         Stop the server: sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh stop
 
 7) Database location: `/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/repository/database/WSO2SHARED_DB.mv.db` ... 
 8) Open this URL to check: https://localhost:9443/devportal
