@@ -5,7 +5,11 @@ See this video, Change API Context:
 
 https://www.youtube.com/watch?v=-q2BacTL7jM
 
-`Ignore the version number to be called: Just go to: API > Overview > Develop > Portal Configurations > basic Info > Make this the default version > Yes`
+         Ignore the version number to be called in the context path:
+         https://localhost:8243/v2/InformationModel/Configuration/Funding/RejectionReasons
+         INSTEAD OF
+         https://localhost:8243/v2/InformationModel/Configuration/Funding/RejectionReasons
+         Just go to: API > Overview > Develop > Portal Configurations > basic Info > Make this the default version > Yes
 
 # Previous releases/List Ports
 https://wso2.com/api-manager/previous-releases/
