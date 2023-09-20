@@ -79,7 +79,8 @@ https://apim.docs.wso2.com/en/latest/install-and-setup/setup/reference/default-p
    
          sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh start
          sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh shutdown
-   
+
+6) Database location: `/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/repository/database/WSO2SHARED_DB.mv.db` ... 
 7) Open this URL to check: https://localhost:9443/devportal
 8) The default credentials `username/password` are: `admin/admin`
 9) Go to: https://localhost:9443/publisher to see APIs
