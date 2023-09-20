@@ -75,7 +75,7 @@ https://apim.docs.wso2.com/en/latest/install-and-setup/setup/reference/default-p
 2) Subscribe and then download: `wso2am-4.2.0` folder
 3) Go to: `/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/bin`
 4) Run: `sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ./api-manager.sh`
-5) To `start` and `shutdown` you can use:
+5) Alternative to 4) To `start` and `shutdown` you can use:
    
          sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh start
          sudo JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 sh api-manager.sh shutdown
