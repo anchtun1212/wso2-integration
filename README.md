@@ -1,10 +1,11 @@
-# !!!!!!!IMPORTANT!!!!!!!
-`USE THE VERSION 4.0.0 instead of wso2am-4.2.0`
+# GENERAL TIPS
+`You can use the version 4.0.0 instead of wso2am-4.2.0 if you have some import/export API issues`
 
 See this video, Change API Context:
 
 https://www.youtube.com/watch?v=-q2BacTL7jM
 
+`Ignore the version number to be called: Just go to: API > Overview > Develop > Portal Configurations > basic Info > Make this the default version > Yes`
 
 # Previous releases/List Ports
 https://wso2.com/api-manager/previous-releases/
