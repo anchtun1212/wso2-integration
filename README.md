@@ -522,6 +522,11 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 4- mysql -h <MYSQL_HOST_IP> -u <USER_NAME> -p (e.g. mysql -h localhost -u root -p) => The user should have database creation privileges.
 5- CREATE DATABASE <DATABASE_NAME>; (When creating the database related to apim_db with MySQL 8.0, add character set latin1 to avoid the MySQL Linux ERROR 1071 (42000).CREATE DATABASE <APIM_DATABASE_NAME> character set latin1;)
 e.g. CREATE DATABASE wso2_db character set latin1;
+6- If you are using MySQL version - 8.0.x, use the following commands to create the users and the grant authorization:
+         CREATE USER 'apimadmin'@'localhost' IDENTIFIED BY 'apimadmin';
+         GRANT ALL ON apim_db.* TO 'apimadmin'@'localhost';
+         CREATE USER 'sharedadmin'@'localhost' IDENTIFIED BY 'sharedadmin';
+         GRANT ALL ON shared_db.* TO 'sharedadmin'@'localhost';
             
            
       
