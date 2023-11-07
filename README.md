@@ -528,10 +528,11 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
 e.g. CREATE DATABASE wso2_db character set latin1;
 
 6- If you are using MySQL version - 8.0.x, use the following commands to create the users and the grant authorization:
-         CREATE USER 'apimadmin'@'localhost' IDENTIFIED BY 'apimadmin';
-         GRANT ALL ON apim_db.* TO 'apimadmin'@'localhost';
-         CREATE USER 'sharedadmin'@'localhost' IDENTIFIED BY 'sharedadmin';
-         GRANT ALL ON shared_db.* TO 'sharedadmin'@'localhost';
+
+                  CREATE USER 'apimadmin'@'localhost' IDENTIFIED BY 'apimadmin';
+                  GRANT ALL ON apim_db.* TO 'apimadmin'@'localhost';
+                  CREATE USER 'sharedadmin'@'localhost' IDENTIFIED BY 'sharedadmin';
+                  GRANT ALL ON shared_db.* TO 'sharedadmin'@'localhost';
             
            
       
