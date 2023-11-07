@@ -554,6 +554,7 @@ e.g. CREATE DATABASE wso2_db character set latin1;
          A datasource is used to establish a connection to a database. By default, WSO2_SHARED_DB and WSO2AM_DB datasources are configured in the deployment.toml file to connect to the                 default H2 databases.
 
 11- Open the <API-M_HOME>/repository/conf/deployment.toml configuration file and locate the [database.shared_db] and [database.apim_db] configuration elements.
+
          example:
          [database.shared_db]
          type = "mysql"
