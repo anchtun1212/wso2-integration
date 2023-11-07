@@ -538,4 +538,11 @@ e.g. CREATE DATABASE wso2_db character set latin1;
 7- After you have finalized the permissions, reload all the privileges. => FLUSH PRIVILEGES;
 
 8- Log out from the MySQL command prompt. => quit;
-      
+
+9- Setting up the drivers
+
+         Be sure to use the connector version that is supported by the MySQL version you use. If you come across any issues due to version incompatibility, follow the instructions below:
+         Shut down the server and remove all the existing connectors from the <API-M_HOME>/repository/components/lib and <API-M_HOME>/repository/components/dropins directories.
+         Download the connector JAR that is compatible with your current MySQL version.
+         Copy the JAR file only to the <API-M_HOME>/repository/components/lib location.
+         Files will be copied automatically to the dropins folder during the server startup.
