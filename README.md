@@ -539,7 +539,14 @@ e.g. CREATE DATABASE wso2_db character set latin1;
 
 8- Log out from the MySQL command prompt. => quit;
 
-9- Setting up the drivers
+9- Executing DB scripts to create tables on MySQL database
+
+         Execute the relevant script to create tables in the registry and user manager database (WSO2_SHARED_DB).
+         mysql -u sharedadmin -p -Dshared_db < '<API-M_HOME>/dbscripts/mysql.sql';
+         Execute the relevant script to create tables in the apim database (WSO2AM_DB).
+         mysql -u apimadmin -p -Dapim_db < '<API-M_HOME>/dbscripts/apimgt/mysql.sql';
+
+10- Setting up the drivers
 
          Be sure to use the connector version that is supported by the MySQL version you use. If you come across any issues due to version incompatibility, follow the instructions below:
          Shut down the server and remove all the existing connectors from the <API-M_HOME>/repository/components/lib and <API-M_HOME>/repository/components/dropins directories.
@@ -548,27 +555,29 @@ e.g. CREATE DATABASE wso2_db character set latin1;
          Files will be copied automatically to the dropins folder during the server startup.
          /home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/repository/components/lib
 
-10- Changing the database to MySQL
+11- Changing the database to MySQL
 
          Creating the datasource connection to MySQL
          A datasource is used to establish a connection to a database. By default, WSO2_SHARED_DB and WSO2AM_DB datasources are configured in the deployment.toml file to connect to the                 default H2 databases.
 
-11- Open the <API-M_HOME>/repository/conf/deployment.toml configuration file and locate the [database.shared_db] and [database.apim_db] configuration elements.
+12- Open the <API-M_HOME>/repository/conf/deployment.toml configuration file and locate the [database.shared_db] and [database.apim_db] configuration elements.
 
          example:
-         [database.shared_db]
-         type = "mysql"
-         url = "jdbc:mysql://localhost:3306/shared_db?useSSL=false"
-         username = "sharedadmin"
-         password = "sharedadmin"
-         
          [database.apim_db]
          type = "mysql"
          url = "jdbc:mysql://localhost:3306/apim_db?useSSL=false"
          username = "apimadmin"
-         password = "apimadmin"
+         password = "!Apimadmin123"
+         driver="com.mysql.cj.jdbc.Driver"
+         
+         [database.shared_db]
+         type = "mysql"
+         url = "jdbc:mysql://localhost:3306/shared_db?useSSL=false"
+         username = "sharedadmin"
+         password = "!Sharedadmin123"
+         driver="com.mysql.cj.jdbc.Driver"
 
-12- Restart the server.         
+13- Restart the server.         
 
 
 
