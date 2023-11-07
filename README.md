@@ -543,8 +543,10 @@ e.g. CREATE DATABASE wso2_db character set latin1;
 
          Execute the relevant script to create tables in the registry and user manager database (WSO2_SHARED_DB).
          mysql -u sharedadmin -p -Dshared_db < '<API-M_HOME>/dbscripts/mysql.sql';
+         e.g. mysql -u sharedadmin -p -Dshared_db < '/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/dbscripts/mysql.sql';
          Execute the relevant script to create tables in the apim database (WSO2AM_DB).
          mysql -u apimadmin -p -Dapim_db < '<API-M_HOME>/dbscripts/apimgt/mysql.sql';
+         e.g. mysql -u apimadmin -p -Dapim_db < '/home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/dbscripts/apimgt/mysql.sql';
 
 10- Setting up the drivers
 
