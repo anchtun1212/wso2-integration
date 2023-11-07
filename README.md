@@ -11,6 +11,8 @@ https://www.youtube.com/watch?v=-q2BacTL7jM
          https://localhost:8243/context/versionNumber/methodName
          Just go to: API > Overview > Develop > Portal Configurations > Basic Info > Make this the default version > Yes
 
+Run:         ps -ef | grep wso2         
+
 # Previous releases/List Ports
 https://wso2.com/api-manager/previous-releases/
 
