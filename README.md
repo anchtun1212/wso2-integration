@@ -568,5 +568,7 @@ e.g. CREATE DATABASE wso2_db character set latin1;
          username = "apimadmin"
          password = "apimadmin"
 
+12- Restart the server.         
+
 
 
