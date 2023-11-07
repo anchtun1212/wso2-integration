@@ -514,6 +514,8 @@ https://apim.docs.wso2.com/en/4.0.0/install-and-setup/setup/api-controller/getti
             => username: devops / password: 123456
             apictl -k vcs deploy -e production
 
+# Change Default Databases
+1- Define the hostname for configuring permissions for the new database in the /etc/hosts file. (Do this step only if your database is not on your local machine and on a separate server.)
             
            
       
