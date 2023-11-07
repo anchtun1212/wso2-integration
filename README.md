@@ -546,3 +546,26 @@ e.g. CREATE DATABASE wso2_db character set latin1;
          Download the connector JAR that is compatible with your current MySQL version.
          Copy the JAR file only to the <API-M_HOME>/repository/components/lib location.
          Files will be copied automatically to the dropins folder during the server startup.
+         /home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.2.0/repository/components/lib
+
+10- Changing the database to MySQL
+
+         Creating the datasource connection to MySQL
+         A datasource is used to establish a connection to a database. By default, WSO2_SHARED_DB and WSO2AM_DB datasources are configured in the deployment.toml file to connect to the                 default H2 databases.
+
+11- Open the <API-M_HOME>/repository/conf/deployment.toml configuration file and locate the [database.shared_db] and [database.apim_db] configuration elements.
+         example:
+         [database.shared_db]
+         type = "mysql"
+         url = "jdbc:mysql://localhost:3306/shared_db?useSSL=false"
+         username = "sharedadmin"
+         password = "sharedadmin"
+         
+         [database.apim_db]
+         type = "mysql"
+         url = "jdbc:mysql://localhost:3306/apim_db?useSSL=false"
+         username = "apimadmin"
+         password = "apimadmin"
+
+
+
