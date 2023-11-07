@@ -529,10 +529,13 @@ e.g. CREATE DATABASE wso2_db character set latin1;
 
 6- If you are using MySQL version - 8.0.x, use the following commands to create the users and the grant authorization:
 
-                  CREATE USER 'apimadmin'@'localhost' IDENTIFIED BY 'apimadmin';
+                  CREATE USER 'apimadmin'@'localhost' IDENTIFIED BY '!Apimadmin123';
                   GRANT ALL ON apim_db.* TO 'apimadmin'@'localhost';
-                  CREATE USER 'sharedadmin'@'localhost' IDENTIFIED BY 'sharedadmin';
+                  CREATE USER 'sharedadmin'@'localhost' IDENTIFIED BY '!Sharedadmin123';
                   GRANT ALL ON shared_db.* TO 'sharedadmin'@'localhost';
-            
-           
+
+
+7- After you have finalized the permissions, reload all the privileges. => FLUSH PRIVILEGES;
+
+8- Log out from the MySQL command prompt. => quit;
       
