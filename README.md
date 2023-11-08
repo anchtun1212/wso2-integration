@@ -594,7 +594,7 @@ https://stackoverflow.com/collectives/wso2/articles/72709174/how-to-write-wso2-p
 		GRANT ALL PRIVILEGES ON Log_DB.* TO 'adminlog'@'%';
 	 	FLUSH PRIVILEGES;
    		USE Log_DB;
-		CREATE TABLE LOGS(DATE VARCHAR(200) NOT NULL, TENANT_ID VARCHAR(20) NOT NULL, LEVEL VARCHAR(10) NOT NULL, LOGGER VARCHAR(200) NOT NULL,MESSAGE VARCHAR(2000) NOT NULL);
+		CREATE TABLE LOGS(LOG_TIME VARCHAR(20) NOT NULL, LOG_LEVEL VARCHAR(20) NOT NULL, MESSAGE VARCHAR(1000) NOT NULL);
    		If you get error: Public Key Retrieval is not allowed
    		Right-click your connection, choose "Edit Connection"
 		On the "Connection settings" screen (main screen), click on "Edit Driver Settings"
@@ -602,3 +602,43 @@ https://stackoverflow.com/collectives/wso2/articles/72709174/how-to-write-wso2-p
 		Change two properties: "useSSL" and "allowPublicKeyRetrieval"
 		Set their values to "false" and "true" by double-clicking on the "value" column
 
+		in this file: /home/mohammedayman/projects/sme/fundingGate/integration/wso2am-4.0.0/repository/conf/log4j2.properties
+		add those lines:
+  		appenders=CARBON_CONSOLE, CARBON_LOGFILE, AUDIT_LOGFILE, ATOMIKOS_LOGFILE, CARBON_TRACE_LOGFILE, ERROR_LOGFILE, OPEN_TRACING,SERVICE_APPENDER, TRACE_APPENDER, osgi, 		
+  		CORRELATION, BOTDATA_APPENDER, API_LOGFILE, jdbc
+		#####################################################Logs to External Database##################################################################################
+  		appender.jdbc.type = JDBC
+		appender.jdbc.name=jdbc
+		appender.jdbc.connectionSource.driverClassName=com.mysql.cj.jdbc.Driver
+		appender.jdbc.connectionSource.type= DriverManager
+		appender.jdbc.connectionSource.connectionString=jdbc:mysql://localhost:3306/Log_DB?allowPublicKeyRetrieval=true&useSSL=false
+		appender.jdbc.connectionSource.userName=adminlog
+		appender.jdbc.connectionSource.password=!Adminlog123
+		appender.jdbc.tableName=LOGS
+		appender.jdbc.ignoreExceptions=false
+		appender.jdbc.columnConfigs[0].type = COLUMN
+		appender.jdbc.columnConfigs[0].name = LOG_TIME
+		appender.jdbc.columnConfigs[0].pattern =%d
+		appender.jdbc.columnConfigs[0].isUnicode =false
+		appender.jdbc.columnConfigs[1].type = COLUMN
+		appender.jdbc.columnConfigs[1].name = LOG_LEVEL
+		appender.jdbc.columnConfigs[1].pattern =%5p
+		appender.jdbc.columnConfigs[1].isUnicode =false
+		appender.jdbc.columnConfigs[2].type = COLUMN
+		appender.jdbc.columnConfigs[2].name = MESSAGE
+		appender.jdbc.columnConfigs[2].pattern =%mm%ex%n
+		appender.jdbc.columnConfigs[2].isUnicode =false
+		appender.jdbc.bufferSize=1000
+		#appender.jdbc.filter.1.type=RegexFilter
+		#appender.jdbc.filter.1.regex="<regex-pattern>"
+		#appender.jdbc.filter.1.onMatch=ACCEPT
+		#appender.jdbc.filter.1.onMismatch=DENY
+		
+		logger.AUDIT_LOG.appenderRef.jdbc.ref = jdbc
+		logger.AUDIT_LOG.name = AUDIT_LOG
+		logger.AUDIT_LOG.level = INFO
+		logger.AUDIT_LOG.appenderRef.AUDIT_LOGFILE.ref = AUDIT_LOGFILE
+		logger.AUDIT_LOG.appenderRef.jdbc.ref = jdbc
+		logger.AUDIT_LOG.additivity = false
+		
+		Thats it. Restart the server.
