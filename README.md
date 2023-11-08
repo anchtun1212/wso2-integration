@@ -585,8 +585,20 @@ e.g. CREATE DATABASE wso2_db character set latin1;
 
 # Writing logs into an external DB
 
-         CREATE DATABASE Log_DB character set latin1;
-         CREATE USER 'adminlog'@'%' IDENTIFIED BY '!Adminlog123';
-	 GRANT ALL PRIVILEGES ON Log_DB.* TO 'adminlog'@'%';
-	 FLUSH PRIVILEGES;
+see this:
+
+https://stackoverflow.com/collectives/wso2/articles/72709174/how-to-write-wso2-product-logs-to-external-database
+
+        	CREATE DATABASE Log_DB character set latin1;
+        	CREATE USER 'adminlog'@'%' IDENTIFIED BY '!Adminlog123';
+		GRANT ALL PRIVILEGES ON Log_DB.* TO 'adminlog'@'%';
+	 	FLUSH PRIVILEGES;
+   		USE Log_DB;
+		CREATE TABLE LOGS(DATE VARCHAR(200) NOT NULL, TENANT_ID VARCHAR(20) NOT NULL, LEVEL VARCHAR(10) NOT NULL, LOGGER VARCHAR(200) NOT NULL,MESSAGE VARCHAR(2000) NOT NULL);
+   		If you get error: Public Key Retrieval is not allowed
+   		Right-click your connection, choose "Edit Connection"
+		On the "Connection settings" screen (main screen), click on "Edit Driver Settings"
+		Click on "Driver properties"
+		Change two properties: "useSSL" and "allowPublicKeyRetrieval"
+		Set their values to "false" and "true" by double-clicking on the "value" column
 
