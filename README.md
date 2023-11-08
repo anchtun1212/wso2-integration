@@ -587,6 +587,6 @@ e.g. CREATE DATABASE wso2_db character set latin1;
 
          CREATE DATABASE Log_DB character set latin1;
          CREATE USER 'adminlog'@'%' IDENTIFIED BY '!Adminlog123';
-	GRANT ALL PRIVILEGES ON Log_DB.* TO 'adminlog'@'%';
-	FLUSH PRIVILEGES;
+	 GRANT ALL PRIVILEGES ON Log_DB.* TO 'adminlog'@'%';
+	 FLUSH PRIVILEGES;
 
