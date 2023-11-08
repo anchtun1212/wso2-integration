@@ -583,5 +583,10 @@ e.g. CREATE DATABASE wso2_db character set latin1;
 
 13- Restart the server.         
 
+# Writing logs into an external DB
 
+         CREATE DATABASE Log_DB character set latin1;
+         CREATE USER 'adminlog'@'%' IDENTIFIED BY '!Adminlog123';
+	GRANT ALL PRIVILEGES ON Log_DB.* TO 'adminlog'@'%';
+	FLUSH PRIVILEGES;
 
